@@ -9,9 +9,9 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task0.V11.Test
         public void ValidCalc()
         {
             DataService ds = new DataService();
-            double res = ds.Calculate(7, 8, 9);
-            double wait = 1.667;
-            Assert.AreEqual(wait, res);
+            double result = ds.Calculate(2);
+            double expected = 1.6 * Math.Pow(2, 3) - 2.1 * Math.Pow(2, 2) + 7 * 2;
+            Assert.AreEqual(Math.Round(expected, 3), result);
         }
     }
 }

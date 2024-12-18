@@ -6,7 +6,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task0.V11.Lib
     {
         public double Calculate(int x)
         {
-            double res = ((double)a) + (double)b) / (double)c;
+            double res = 1.6 * Math.Pow(x, 3) - 2.1 * Math.Pow(x, 2) + 7 * x;
             return Math.Round(res, 3);
         }
     }

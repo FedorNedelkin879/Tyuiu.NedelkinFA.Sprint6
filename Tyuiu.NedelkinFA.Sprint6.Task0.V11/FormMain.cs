@@ -14,23 +14,28 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task0.V11
             DataService ds = new DataService();
             try
             {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA.Text), Convert.ToInt32(textBoxVarB.Text), Convert.ToInt32(textBoxVarC.Text)));
+                int x = Convert.ToInt32(textBoxVarX.Text);
+                double result = ds.Calculate(x);
+                textBoxResult.Text = result.ToString();
             }
             catch
             {
-                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введите корректное число!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void textBoxVarA_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 ||  e.KeyChar >= 58) && (e.KeyChar != ','), && (e.KeyChar != 8))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
             {
                 e.Handled = true;
             }
         }
+
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ИИПБ-24-1 Неделькин Фёдор Андреевич", "Сообщение", MessageBoxButtonsEx.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Задание выполнил студент группы ИИПБ-24-1 Неделькин Фёдор Андреевич",
+                            "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
