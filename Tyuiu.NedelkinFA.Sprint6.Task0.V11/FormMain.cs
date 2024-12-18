@@ -34,8 +34,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task0.V11
 
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Задание выполнил студент группы ИИПБ-24-1 Неделькин Фёдор Андреевич",
-                            "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Задание выполнил студент группы ИИПБ-24-1 Неделькин Фёдор Андреевич", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
