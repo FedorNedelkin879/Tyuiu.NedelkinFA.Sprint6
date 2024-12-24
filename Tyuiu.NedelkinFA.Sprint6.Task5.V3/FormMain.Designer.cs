@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.NedelkinFA.Sprint6.Task6.V3
+﻿namespace Tyuiu.NedelkinFA.Sprint6.Task5.V3
 {
     partial class FormMain
     {
