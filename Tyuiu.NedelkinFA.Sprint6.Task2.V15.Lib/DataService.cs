@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                double denominator = x + 1.2;
+                double denominator = x * x + 2; 
                 double y;
 
                 if (denominator == 0)
@@ -24,7 +24,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
                     y = Math.Round(
                         (2 * Math.Sin(x) / denominator) +
                         Math.Cos(x) -
-                        (7 * x * 2),
+                        (7 * x),
                         2
                     );
                 }
