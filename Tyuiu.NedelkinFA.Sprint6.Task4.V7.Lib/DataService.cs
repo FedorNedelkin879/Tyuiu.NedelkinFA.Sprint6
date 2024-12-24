@@ -20,7 +20,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task4.V7.Lib
                 }
                 else
                 {
-                    y = Math.Round(Math.Cos(x) / (x + 2) + Math.Sin(x) * 8 * x - 3 * x, 2);
+                    y = Math.Round(Math.Cos(x) / (x + 2) + Math.Sin(x) * 8 * x - 2 * x, 2);
                     valueArray[count] = y;
                     count++;
                 }
