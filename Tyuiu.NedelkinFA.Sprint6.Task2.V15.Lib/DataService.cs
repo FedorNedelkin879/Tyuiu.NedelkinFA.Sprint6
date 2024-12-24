@@ -23,7 +23,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
                 double y = Math.Round(
                     (2 * Math.Sin(x)) / denominator +
                     Math.Cos(x) -
-                    (7 * x * x),
+                    (7 * x * 2),
                     2
                 );
                 valueArray[count] = y;
