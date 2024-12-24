@@ -15,6 +15,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task4.V7.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
                 if (x + 2 == 0)
+                {
                     valueArray[count] = 0;
                 }
                 else
