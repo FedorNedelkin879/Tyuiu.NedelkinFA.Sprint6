@@ -1,7 +1,7 @@
 namespace Tyuiu.NedelkinFA.Sprint6.Task6.V9.Test
 {
     [TestClass]
-    public class DataService
+    public class DataServiceTest
     {
         [TestMethod]
         public void ValidCalc()

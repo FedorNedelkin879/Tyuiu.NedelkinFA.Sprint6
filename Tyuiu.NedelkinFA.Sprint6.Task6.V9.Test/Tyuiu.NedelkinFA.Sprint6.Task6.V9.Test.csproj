@@ -17,9 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="tyuiu.cources.programming.interfaces">
-      <HintPath>..\tyuiu.cources.programming.interfaces (1).dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Tyuiu.NedelkinFA.Sprint6.Task6.V9.Lib\Tyuiu.NedelkinFA.Sprint6.Task6.V9.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

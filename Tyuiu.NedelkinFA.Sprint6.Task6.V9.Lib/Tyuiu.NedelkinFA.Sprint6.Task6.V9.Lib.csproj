@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.NedelkinFA.Sprint6.Task6.V9.Test\Tyuiu.NedelkinFA.Sprint6.Task6.V9.Test.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\tyuiu.cources.programming.interfaces (1).dll</HintPath>
     </Reference>
