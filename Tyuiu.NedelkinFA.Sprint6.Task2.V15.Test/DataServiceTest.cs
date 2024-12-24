@@ -9,14 +9,17 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Test
         public void ValidCalc()
         {
             DataService ds = new DataService();
-            int a = 0; int b = 1;
-            double[] res = ds.GetMassFunction(a, b);
-            double[] wail = new double[2];
-            wail[0] = -5;
-            wail[1] = -1;
-            Assert.AreEqual(res[0], wail[0]);
+            int startValue = -5;
+            int stopValue = 5;
+            double[] res = ds.GetMassFunction(startValue, stopValue);
 
-            Assert.AreEqual(res[1], wail[1]);
+            double[] expectedResults = new double[]
+            {70.14, 55.21, 41.05, 27.96, 15.48, 1.0, -13.06, -28.16, -42.96, -56.77, -69.83};
+
+            for (int i = 0; i < res.Length; i++)
+            {
+                Assert.AreEqual(res[i], expectedResults[i], 0.01);
+            }
         }
     }
 }
