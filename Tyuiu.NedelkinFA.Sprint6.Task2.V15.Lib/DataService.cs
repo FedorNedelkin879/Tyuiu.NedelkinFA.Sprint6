@@ -13,7 +13,6 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
                 double denominator = 3 * x + 1.2;
-
                 if (denominator == 0)
                 {
                     valueArray[count] = 0;
