@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                double denominator = x * x + 2; 
+                double denominator = x * x + 1.2;
                 double y;
 
                 if (denominator == 0)
