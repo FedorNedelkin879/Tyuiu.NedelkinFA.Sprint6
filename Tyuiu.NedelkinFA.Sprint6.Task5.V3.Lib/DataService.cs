@@ -10,11 +10,11 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task5.V3.Lib
             double[] nums = Array.ConvertAll(strNum, double.Parse);
             List<double> resultList = new List<double>();
 
-            for (int i = 0; i < nums.Length; i++)
+            foreach (double num in nums)
             {
-                if (nums[i] != 0)
+                if (num % 1 != 0)
                 {
-                    resultList.Add(Math.Round(nums[i], 3));
+                    resultList.Add(Math.Round(num, 3));
                 }
             }
 
