@@ -9,20 +9,30 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task1.V10.Lib
             int len = stopValue - startValue + 1;
             double[] res = new double[len];
             int count = 0;
+
             for (int i = startValue; i <= stopValue; i++)
             {
-                double y = Math.Round((2 * i) - 4 + (((2 * i) - 1) / (Math.Sin(i) + 1)), 2);
+                double denominator = 3 * i + 0.5;
+                double y;
 
-
-
-                if (Math.Sin(i) == -1)
+                if (denominator == 0)
                 {
-                    res[i] = 0;
+                    y = 0;
                 }
-                res[count] = y;
+                else
+                {
+                    y = Math.Round(
+                        Math.Sin(i) +
+                        (2 / denominator) -
+                        (2 * Math.Cos(i) * 2 * i),
+                        2
+                    );
+                }
 
+                res[count] = y;
                 count++;
             }
+
             return res;
         }
     }
