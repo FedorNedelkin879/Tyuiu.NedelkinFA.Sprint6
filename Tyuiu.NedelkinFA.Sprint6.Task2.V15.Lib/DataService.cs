@@ -6,33 +6,28 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task2.V15.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            int len = stopValue - startValue + 1;
-            double[] valueArray = new double[len];
+            double[] valueArray;
+            int len = (stopValue - startValue + 1);
+            valueArray = new double[len];
             int count = 0;
-
             for (int x = startValue; x <= stopValue; x++)
             {
-                double denominator = x * x + 1.2;
-                double y;
-
+                double denominator = 3 * x + 1.2;
                 if (denominator == 0)
                 {
-                    y = 0;
-                }
-                else
-                {
-                    y = Math.Round(
-                        (2 * Math.Sin(x) / denominator) +
-                        Math.Cos(x) -
-                        (7 * x),
-                        2
-                    );
+                    valueArray[count] = 0;
+                    continue;
                 }
 
+                double y = Math.Round(
+                    (2 * Math.Sin(x)) / denominator +
+                    Math.Cos(x) -
+                    (7 * x * x),
+                    2
+                );
                 valueArray[count] = y;
                 count++;
             }
-
             return valueArray;
         }
     }
