@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.NedelkinFA.Sprint6.Task4.V7.Lib
 {
@@ -13,17 +14,16 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task4.V7.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x + 2 == 0)
+                if (x == 100 || x + 2 == 0)
                 {
                     valueArray[count] = 0;
-                    count++;
                 }
                 else
                 {
-                    y = Math.Round(Math.Cos(x) / (x + 2) + Math.Sin(x) * 8 * x - 2 * x, 2);
+                    y = Math.Round(Math.Cos(x) / (x + 2), 2);
                     valueArray[count] = y;
-                    count++;
                 }
+                count++;
             }
             return valueArray;
         }
