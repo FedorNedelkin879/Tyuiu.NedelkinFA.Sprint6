@@ -18,7 +18,6 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task7.V30.Lib
                     matrix[i, j] = Convert.ToInt32(line[j]);
                 }
             }
-
             return matrix;
         }
     }
