@@ -15,7 +15,14 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task7.V30.Lib
 
                 for (int j = 0; j < line.Length; j++)
                 {
-                    matrix[i, j] = Convert.ToInt32(line[j]);
+                    if (j == 0)
+                    {
+                        matrix[i, j] = 8;
+                    }
+                    else
+                    {
+                        matrix[i, j] = Convert.ToInt32(line[j]);
+                    }
                 }
             }
             return matrix;
