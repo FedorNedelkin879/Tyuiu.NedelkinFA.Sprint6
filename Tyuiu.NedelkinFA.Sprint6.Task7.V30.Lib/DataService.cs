@@ -15,7 +15,7 @@ namespace Tyuiu.NedelkinFA.Sprint6.Task7.V30.Lib
 
                 for (int j = 0; j < line.Length; j++)
                 {
-                    if (j == 0)
+                    if (j == 0 && i != file.Length - 1)
                     {
                         matrix[i, j] = 8;
                     }
